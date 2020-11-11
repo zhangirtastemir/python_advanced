@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, Comment
 
-admin.site.register(Post) #для того чтобы наша модель была видна на сайте
-
-# Register your models here.
+admin.site.register(Post)
+admin.site.register(Comment)

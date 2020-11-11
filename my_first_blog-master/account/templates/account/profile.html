@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block page_header %}Edit your account{% endblock %}
+
+{% block content %}
+	{{user.username}}
+	{{user.profile.date_of_birth}}
+	<img width="200" height="200" src  = "{{user.profile.photo.url}}">
+	
+{% endblock %}
